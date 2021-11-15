@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Admissions</title>
+    <title>Registration</title>
 </head>
 
 <body>
@@ -39,19 +39,32 @@
     <div class="container">
         <div class="card justify-items-center" id="main-card" style="margin-top: 8em;">
             <div class="card-body text-center">
-                <h3 class="card-text mt-4">WELCOME</h3>
-                <p class="card-text lead" style="font-size: .9em;">Sign in by entering the information below</p>
+                <h3 class="card-text mt-4">Registration</h3>
+                <p class="card-text lead" style="font-size: .9em;">Create an account by filling the fields below</p>
                 <form action="">
                     <div class="form-group flex-column w-50 m-auto" id="formStyling">
+                        <div class="input-group mb-3">
+                            <input id="firstName" class="form-control" type="text" for="firstName" placeholder="First Name">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input id="lastName" class="form-control" type="text" for="lastName" placeholder="Last Name">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input id="email" class="form-control" type="email" for="email" placeholder="Email">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input id="age" class="form-control" type="number" for="age" placeholder="Enter your Age">
+                        </div>
                         <div class="input-group mb-3">
                             <input id="username" class="form-control" type="text" for="username" placeholder="Username">
                         </div>
                         <div class="input-group mb-3">
                             <input id="password" class="form-control" type="password" for="password" placeholder="Password">
                         </div>
-                        <button class="btn mb-3">Login</button>
-                        <p class="lead m-2 " style="font-size:.9em; ">Dont have an account</p>
-                        <a href="./registration.html" style="text-decoration: none;">Sign Up</a>
+                        <div class="input-group mb-3">
+                            <input id="passwordConfirm" class="form-control" type="password" for="passwordConfirm" placeholder="Re-Enter Password">
+                        </div>
+                        <button class="btn mb-3">Create Account</button>
                     </div>
                 </form>
             </div>
